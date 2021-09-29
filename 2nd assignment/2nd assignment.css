@@ -1,0 +1,429 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.42;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1, h2, h4, h4, h5, h6 {
+  font-family: 'Stick No Bills', sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+#siteheader {
+  background-color: #0fd87a;
+  height: 80px;
+  line-height: 80px;
+  z-index: 998;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.3);
+}
+
+.logo {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.logo img{
+  height: 66px;
+  width: auto;
+
+}
+
+.sitenav {
+  float: right;
+  width: 65%;
+  z-index: 998;
+  position: relative;
+}
+
+.primarynav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.primarynav ul li{
+  float: left;
+  position: relative;
+}
+
+.primarynav ul li a{
+  color: #050505be;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 0 25px;
+  display: inline-block;
+}
+
+.primarynav ul li a:hover{
+  background-color: aquamarine;
+  color: #000;
+}
+
+ul.submenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #0aa62c;
+  width: 170px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+li.dropdown:hover ul.submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+li.dropdown::after {
+content: "\f078";
+font-family: "font awesome 5 free";
+font-weight: 900;
+position: absolute;
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+color: #1532b6;
+z-index: 2;
+}
+
+li.dropdown:hover::after {
+
+  color: #000;
+}
+
+ul.submenu li{
+  float: none;
+  height: auto;
+  line-height: 1;
+}
+
+ul.submenu li a{
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+  display: block;
+  margin: 0; 
+  color: #fff;
+}
+
+ul.submenu li:last-child a{
+  border-bottom: 0;
+}
+
+#herosec {
+  padding: 200px 0;
+  background: rgb(221, 158, 158) url(image/rachel-park-hrlvr2ZlUNk-unsplash.jpg) no-repeat fixed center;
+  color: #fff;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+#herosec::before {
+  content: "";
+  background-color: rgba(0,0,0,.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+#herosec .container {
+  z-index: 12;
+  position: relative;
+}
+
+#herosec h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#herosec p {
+  font-size: 25px;
+}
+
+.contactbtn {
+  margin-top: 30px;
+}
+
+.contactbtn a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0fc5e6;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.contactbtn a i{
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.contactbtn a:hover{
+  background-color: rgb(122, 196, 38);
+}
+
+.contactbtn.small{
+  margin-top: 20px;
+}
+
+.contactbtn.small a {
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.contactbtn.small a i{
+  font-size: 18px;
+}
+
+
+
+#contentbox {
+  padding: 60px 0;
+}
+
+#contentbox h2 {
+  text-align: center;
+  font-size: 38px;
+  position: relative;
+}
+
+#contentbox h2 span{
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+
+
+
+#contentbox p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.iconboxarea {
+  display: flex;
+  flex-flow: row wrap; 
+}
+
+.iconboxarea [class*="item"]{
+  width: 31.66666%;
+  margin-right: 2.5%;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3), 2px 2px 20px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-top: 35px;
+  transition: all 0.4s;
+}
+
+.iconboxarea [class*="item"]:hover{
+  margin-top: 25px;
+}
+
+.iconboxarea .box-icon i{
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  font-size: 50px;
+  background: #00c2cb;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.iconboxarea [class*="item"].last{
+  margin-right: 0;
+}
+
+
+
+#headingwithimage1 {
+  padding: 10px 0 60px 0;
+}
+
+#headingwithimage1 .container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#headingwithimage1 h3{
+  font-size: 28px;
+}
+
+#headingwithimage1 p{
+  font-size: 20px;
+}
+
+#headingwithimage1 [class$="left"] {
+  width: 48%;
+  margin-right: 4%;
+}
+
+#headingwithimage1 [class$="right"] {
+  width: 48%;
+}
+
+#headingwithimage1 [class$="right"] img {
+  padding: 5px;
+  background: rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+
+#imagegallery {
+  padding: 80px 0;
+}
+
+.img-grid-gal {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.img-grid-gal [class*="image2"] {
+  grid-area: 1 / 2 / span 2 / 3;
+}
+
+.img-grid-gal [class*="image"]{
+  position: relative;
+}
+#headingwithimage {
+  padding: 10px 0 80px 0;
+}
+
+#headingwithimage .container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#headingwithimage h3{
+  font-size: 40px;
+}
+
+#headingwithimage p{
+  font-size: 30px;
+}
+
+.head-img-left {
+  width: 48%;
+  margin-right: 4%;
+}
+
+.head-img-right {
+  width: 48%;
+}
+
+#headingwithimage [class$="left"] img {
+  padding: 5px;
+  background: rgb(7, 7, 7);
+  border-radius: 3px;
+}
+#contactsection {
+  background: greenyellow url(image/dan-gold-4_jhDO54BYg-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  padding: 50px 0 80px 0;
+}
+
+#contactsection h2 {
+  text-align: center;
+  color: brown;
+  font-size: 50px;
+}
+
+#contactsection [class*="left"]{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+#contactsection [class*="right"]{
+  width: 48%;
+  float: right;
+}
+
+#contactsection input[type="text"], #contactsection input[type="email"], #contactsection textarea{
+  width: 100%;
+  padding: 15px 10px;
+  outline: 0;
+  background-color: rgba(12, 216, 114, 0.2);
+  border: 1px solid steelblue;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: block;
+  color: #fff;
+  font-family: inherit;
+}
+
+#contactsection button[type="submit"] {
+  width: 200px;
+  height: 60px;
+  outline: 0;
+  background-color: rgba(12, 216, 114, 0.2);
+  border: 1px solid steelblue;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: block;
+}
+
+#contactsection button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: steelblue;
+}
+
+#contactsection ::placeholder {
+  color: #f6f6f6;
+}
+#footertext{
+  background-color: #7cb4ce;
+  padding: 50px 0;
+}
+.textinfooter {
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
